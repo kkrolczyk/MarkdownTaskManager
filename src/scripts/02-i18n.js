@@ -113,6 +113,9 @@
                 'action.edit': '✏️',
                 'action.moveUp': 'Move up',
                 'action.moveDown': 'Move down',
+                'action.moveTop': 'Move to top',
+                'action.moveBottom': 'Move to bottom',
+                'taskDetail.position': 'Position in column',
 
                 // Tooltips
                 'tooltip.filterByCategory': 'Filter by this category',
@@ -144,6 +147,18 @@
                 'notif.taskDeleted': 'Task permanently deleted',
                 'notif.taskRestored': 'Task restored to its original column!',
 
+                // Auto-reload (issue #25)
+                'notif.reloadedFromDisk': 'Board reloaded: the files changed on disk',
+                'notif.reloadFailed': 'Could not reload: kanban.md is missing',
+                'notif.autoReloadOn': 'Auto-reload enabled',
+                'notif.autoReloadOff': 'Auto-reload disabled',
+                'header.autoReloadOn': 'Auto-reload when files change on disk: on (click to turn off)',
+                'header.autoReloadOff': 'Auto-reload when files change on disk: off (click to turn on)',
+                'banner.fileChanged': 'kanban.md or archive.md changed on disk.',
+                'banner.reload': 'Reload',
+                'banner.dismiss': 'Not now',
+                'confirm.fileChangedOnDisk': '{file} was changed on disk since it was loaded (by another program, an AI assistant or git).\n\nOK: overwrite it with your version.\nCancel: discard your last change and reload the file from disk.',
+
                 // Prompts and confirmations
                 'prompt.projectName': 'Project name (leave empty to use "{name}"):',
                 'prompt.renameProject': 'New project name:',
@@ -152,6 +167,7 @@
                 'prompt.editSubtask': 'Edit subtask:',
                 'confirm.deleteColumn': 'Delete this column?',
                 'confirm.deleteSubtask': 'Delete this subtask?',
+                'confirm.discardChanges': 'Discard your unsaved changes?',
                 'confirm.deleteProject': 'Remove project "{name}" from the recent list?\n\nThis only removes it from the dropdown - your files will not be deleted.',
                 'confirm.archiveTask': 'Archive task "{title}"?',
                 'confirm.deleteTask': '⚠️ WARNING: Permanently delete task "{title}"?\n\nThis action cannot be undone.',
@@ -160,8 +176,39 @@
                 // Alerts
                 'alert.browserNotSupported': 'Your browser does not support the File System Access API.\n\nPlease use Chrome 86+, Edge 86+ or Opera 72+.',
 
+                // Keyboard shortcuts (issue #24)
+                'shortcuts.title': 'Keyboard shortcuts',
+                'shortcuts.navigate': 'Move the focus between cards and columns',
+                'shortcuts.firstLast': 'Focus the first / last card of the column',
+                'shortcuts.open': 'Open the focused task',
+                'shortcuts.edit': 'Edit the focused or open task',
+                'shortcuts.new': 'New task (in the focused column)',
+                'shortcuts.moveColumn': 'Move the task to the previous / next column',
+                'shortcuts.moveUpDown': 'Move the task up / down',
+                'shortcuts.moveTopBottom': 'Move the task to the top / bottom of the column',
+                'shortcuts.search': 'Focus the search field',
+                'shortcuts.close': 'Close the dialog on top / leave the search field',
+                'shortcuts.save': 'Save the task form',
+                'shortcuts.help': 'Show this help',
+
                 // Subtasks in detail modal
                 'subtask.newPlaceholder': 'New subtask...',
+
+                // About / update check (issue #22)
+                'header.about': 'About / check for updates',
+                'about.title': 'ℹ️ About',
+                'about.version': 'Version:',
+                'about.checkNow': '🔄 Check for updates',
+                'about.checking': 'Checking for updates...',
+                'about.upToDate': 'You are using the latest version.',
+                'about.updateAvailable': 'Version {version} is available',
+                'about.viewRelease': 'view release',
+                'about.checkFailed': 'Could not check for updates (offline?).',
+                'about.neverChecked': 'Not checked for updates yet.',
+                'about.lastChecked': 'Last checked: {date}',
+                'about.autoCheck': 'Check for updates automatically (once a day)',
+                'about.privacy': 'The check sends a single request to api.github.com. No board data is sent.',
+                'about.allReleases': 'All releases on GitHub',
 
                 // Markdown generation
                 'markdown.archiveTitle': '# Task Archive',
@@ -292,6 +339,9 @@
                 'action.edit': '✏️',
                 'action.moveUp': 'Déplacer vers le haut',
                 'action.moveDown': 'Déplacer vers le bas',
+                'action.moveTop': 'Déplacer tout en haut',
+                'action.moveBottom': 'Déplacer tout en bas',
+                'taskDetail.position': 'Position dans la colonne',
 
                 // Tooltips
                 'tooltip.filterByCategory': 'Filtrer par cette catégorie',
@@ -323,6 +373,18 @@
                 'notif.taskDeleted': 'Tâche supprimée définitivement',
                 'notif.taskRestored': 'Tâche restaurée dans sa colonne d\'origine !',
 
+                // Auto-reload (issue #25)
+                'notif.reloadedFromDisk': 'Tableau rechargé : les fichiers ont changé sur le disque',
+                'notif.reloadFailed': 'Rechargement impossible : kanban.md est introuvable',
+                'notif.autoReloadOn': 'Rechargement automatique activé',
+                'notif.autoReloadOff': 'Rechargement automatique désactivé',
+                'header.autoReloadOn': 'Recharger quand les fichiers changent sur le disque : activé (cliquer pour désactiver)',
+                'header.autoReloadOff': 'Recharger quand les fichiers changent sur le disque : désactivé (cliquer pour activer)',
+                'banner.fileChanged': 'kanban.md ou archive.md a changé sur le disque.',
+                'banner.reload': 'Recharger',
+                'banner.dismiss': 'Plus tard',
+                'confirm.fileChangedOnDisk': '{file} a été modifié sur le disque depuis son chargement (par un autre programme, un assistant IA ou git).\n\nOK : l\'écraser avec votre version.\nAnnuler : abandonner votre dernière modification et recharger le fichier depuis le disque.',
+
                 // Prompts and confirmations
                 'prompt.projectName': 'Nom du projet (laisser vide pour utiliser "{name}") :',
                 'prompt.renameProject': 'Nouveau nom du projet :',
@@ -331,6 +393,7 @@
                 'prompt.editSubtask': 'Modifier la sous-tâche:',
                 'confirm.deleteColumn': 'Supprimer cette colonne ?',
                 'confirm.deleteSubtask': 'Supprimer cette sous-tâche ?',
+                'confirm.discardChanges': 'Abandonner les modifications non enregistrées ?',
                 'confirm.deleteProject': 'Retirer le projet "{name}" de la liste récente ?\n\nCeci retire seulement le projet du menu déroulant - vos fichiers ne seront pas supprimés.',
                 'confirm.archiveTask': 'Archiver la tâche "{title}" ?',
                 'confirm.deleteTask': '⚠️ ATTENTION : Supprimer définitivement la tâche "{title}" ?\n\nCette action est irréversible.',
@@ -339,8 +402,39 @@
                 // Alerts
                 'alert.browserNotSupported': 'Votre navigateur ne supporte pas la File System Access API.\n\nVeuillez utiliser Chrome 86+, Edge 86+ ou Opera 72+.',
 
+                // Keyboard shortcuts (issue #24)
+                'shortcuts.title': 'Raccourcis clavier',
+                'shortcuts.navigate': 'Déplacer le focus entre les cartes et les colonnes',
+                'shortcuts.firstLast': 'Aller à la première / dernière carte de la colonne',
+                'shortcuts.open': 'Ouvrir la tâche sélectionnée',
+                'shortcuts.edit': 'Modifier la tâche sélectionnée ou ouverte',
+                'shortcuts.new': 'Nouvelle tâche (dans la colonne sélectionnée)',
+                'shortcuts.moveColumn': 'Déplacer la tâche vers la colonne précédente / suivante',
+                'shortcuts.moveUpDown': 'Monter / descendre la tâche',
+                'shortcuts.moveTopBottom': 'Déplacer la tâche tout en haut / en bas de la colonne',
+                'shortcuts.search': 'Aller au champ de recherche',
+                'shortcuts.close': 'Fermer la fenêtre du dessus / quitter la recherche',
+                'shortcuts.save': 'Enregistrer le formulaire de tâche',
+                'shortcuts.help': 'Afficher cette aide',
+
                 // Subtasks in detail modal
                 'subtask.newPlaceholder': 'Nouvelle sous-tâche...',
+
+                // About / update check (issue #22)
+                'header.about': 'À propos / rechercher des mises à jour',
+                'about.title': 'ℹ️ À propos',
+                'about.version': 'Version :',
+                'about.checkNow': '🔄 Rechercher des mises à jour',
+                'about.checking': 'Recherche de mises à jour...',
+                'about.upToDate': 'Vous utilisez la dernière version.',
+                'about.updateAvailable': 'La version {version} est disponible',
+                'about.viewRelease': 'voir la version',
+                'about.checkFailed': 'Impossible de rechercher des mises à jour (hors ligne ?).',
+                'about.neverChecked': 'Aucune recherche de mise à jour effectuée.',
+                'about.lastChecked': 'Dernière vérification : {date}',
+                'about.autoCheck': 'Rechercher automatiquement les mises à jour (une fois par jour)',
+                'about.privacy': 'La vérification envoie une seule requête à api.github.com. Aucune donnée du tableau n\'est envoyée.',
+                'about.allReleases': 'Toutes les versions sur GitHub',
 
                 // Markdown generation
                 'markdown.archiveTitle': '# Archive des Tâches',
@@ -471,6 +565,9 @@
                 'action.edit': '✏️',
                 'action.moveUp': 'Nach oben',
                 'action.moveDown': 'Nach unten',
+                'action.moveTop': 'Ganz nach oben',
+                'action.moveBottom': 'Ganz nach unten',
+                'taskDetail.position': 'Position in der Spalte',
 
                 // Tooltips
                 'tooltip.filterByCategory': 'Nach dieser Kategorie filtern',
@@ -502,6 +599,18 @@
                 'notif.taskDeleted': 'Aufgabe endgültig gelöscht',
                 'notif.taskRestored': 'Aufgabe in ursprünglicher Spalte zurückgesetzt!',
 
+                // Auto-reload (issue #25)
+                'notif.reloadedFromDisk': 'Board neu geladen: die Dateien wurden auf der Festplatte geändert',
+                'notif.reloadFailed': 'Neu laden nicht möglich: kanban.md fehlt',
+                'notif.autoReloadOn': 'Automatisches Neuladen aktiviert',
+                'notif.autoReloadOff': 'Automatisches Neuladen deaktiviert',
+                'header.autoReloadOn': 'Neu laden, wenn sich Dateien ändern: an (klicken zum Ausschalten)',
+                'header.autoReloadOff': 'Neu laden, wenn sich Dateien ändern: aus (klicken zum Einschalten)',
+                'banner.fileChanged': 'kanban.md oder archive.md wurde auf der Festplatte geändert.',
+                'banner.reload': 'Neu laden',
+                'banner.dismiss': 'Später',
+                'confirm.fileChangedOnDisk': '{file} wurde seit dem Laden auf der Festplatte geändert (von einem anderen Programm, einem KI-Assistenten oder git).\n\nOK: mit Ihrer Version überschreiben.\nAbbrechen: Ihre letzte Änderung verwerfen und die Datei neu laden.',
+
                 // Prompts and confirmations
                 'prompt.projectName': 'Projektname (leer lassen, um "{name}" zu verwenden):',
                 'prompt.renameProject': 'Neuer Projektname:',
@@ -510,6 +619,7 @@
                 'prompt.editSubtask': 'Unteraufgabe bearbeiten:',
                 'confirm.deleteColumn': 'Diese Spalte löschen?',
                 'confirm.deleteSubtask': 'Diese Unteraufgabe löschen?',
+                'confirm.discardChanges': 'Ungespeicherte Änderungen verwerfen?',
                 'confirm.deleteProject': 'Projekt "{name}" aus Liste löschen?\n\nDas Projekt wird nur aus der Liste gelöscht. Die Dateien bleiben bestehen.',
                 'confirm.archiveTask': 'Aufgabe "{title}" archivieren?',
                 'confirm.deleteTask': '⚠️ WARNUNG: Aufgabe "{title}" endgültig löschen?\n\nDies kann nicht rückgängig gemacht werden.',
@@ -518,8 +628,39 @@
                 // Alerts
                 'alert.browserNotSupported': 'Ihr Browser unterstützt die File System Access API nicht.\n\Bitte Chrome 86+, Edge 86+ oder Opera 72+ nutzen.',
 
+                // Keyboard shortcuts (issue #24)
+                'shortcuts.title': 'Tastenkürzel',
+                'shortcuts.navigate': 'Fokus zwischen Karten und Spalten bewegen',
+                'shortcuts.firstLast': 'Erste / letzte Karte der Spalte fokussieren',
+                'shortcuts.open': 'Fokussierte Aufgabe öffnen',
+                'shortcuts.edit': 'Fokussierte oder geöffnete Aufgabe bearbeiten',
+                'shortcuts.new': 'Neue Aufgabe (in der fokussierten Spalte)',
+                'shortcuts.moveColumn': 'Aufgabe in die vorherige / nächste Spalte verschieben',
+                'shortcuts.moveUpDown': 'Aufgabe nach oben / unten verschieben',
+                'shortcuts.moveTopBottom': 'Aufgabe ganz nach oben / unten in der Spalte verschieben',
+                'shortcuts.search': 'Suchfeld fokussieren',
+                'shortcuts.close': 'Obersten Dialog schließen / Suchfeld verlassen',
+                'shortcuts.save': 'Aufgabenformular speichern',
+                'shortcuts.help': 'Diese Hilfe anzeigen',
+
                 // Subtasks in detail modal
                 'subtask.newPlaceholder': 'Neue Unteraufgabe...',
+
+                // About / update check (issue #22)
+                'header.about': 'Über / nach Updates suchen',
+                'about.title': 'ℹ️ Über',
+                'about.version': 'Version:',
+                'about.checkNow': '🔄 Nach Updates suchen',
+                'about.checking': 'Suche nach Updates...',
+                'about.upToDate': 'Sie verwenden die neueste Version.',
+                'about.updateAvailable': 'Version {version} ist verfügbar',
+                'about.viewRelease': 'Release ansehen',
+                'about.checkFailed': 'Updates konnten nicht geprüft werden (offline?).',
+                'about.neverChecked': 'Noch nicht nach Updates gesucht.',
+                'about.lastChecked': 'Zuletzt geprüft: {date}',
+                'about.autoCheck': 'Automatisch nach Updates suchen (einmal täglich)',
+                'about.privacy': 'Die Prüfung sendet eine einzige Anfrage an api.github.com. Es werden keine Board-Daten gesendet.',
+                'about.allReleases': 'Alle Releases auf GitHub',
 
                 // Markdown generation
                 'markdown.archiveTitle': '# Aufgaben-Archiv',
@@ -649,6 +790,9 @@
                 'action.edit': '✏️',
                 'action.moveUp': '上移',
                 'action.moveDown': '下移',
+                'action.moveTop': '移到顶部',
+                'action.moveBottom': '移到底部',
+                'taskDetail.position': '在列中的位置',
 
                 // Tooltips
                 'tooltip.filterByCategory': '按此类别筛选',
@@ -680,6 +824,18 @@
                 'notif.taskDeleted': '任务已永久删除',
                 'notif.taskRestored': '任务已恢复至原列!',
 
+                // Auto-reload (issue #25)
+                'notif.reloadedFromDisk': '看板已重新加载:磁盘上的文件已更改',
+                'notif.reloadFailed': '无法重新加载:找不到 kanban.md',
+                'notif.autoReloadOn': '已启用自动重新加载',
+                'notif.autoReloadOff': '已禁用自动重新加载',
+                'header.autoReloadOn': '文件在磁盘上更改时自动重新加载:开启(点击关闭)',
+                'header.autoReloadOff': '文件在磁盘上更改时自动重新加载:关闭(点击开启)',
+                'banner.fileChanged': '磁盘上的 kanban.md 或 archive.md 已更改。',
+                'banner.reload': '重新加载',
+                'banner.dismiss': '稍后',
+                'confirm.fileChangedOnDisk': '{file} 自加载以来已在磁盘上被更改(由其他程序、AI 助手或 git)。\n\n确定:用您的版本覆盖。\n取消:放弃您的最后一次更改并从磁盘重新加载文件。',
+
                 // Prompts and confirmations
                 'prompt.projectName': '项目名称 (留空则使用 "{name}"):',
                 'prompt.renameProject': '新项目名称:',
@@ -688,6 +844,7 @@
                 'prompt.editSubtask': '编辑子任务:',
                 'confirm.deleteColumn': '删除此列?',
                 'confirm.deleteSubtask': '删除此子任务?',
+                'confirm.discardChanges': '放弃未保存的更改?',
                 'confirm.deleteProject': '从近期列表中移除项目 "{name}" ?\n\n此操作仅会将其从下拉列表中移除, 您的文件不会被删除.',
                 'confirm.archiveTask': '归档任务 "{title}"?',
                 'confirm.deleteTask': '⚠️ 警告: 永久删除任务 "{title}"?\n\n此操作无法撤销.',
@@ -696,8 +853,39 @@
                 // Alerts
                 'alert.browserNotSupported': '您的浏览器不支持文件系统访问 API.\n\n请使用 Chrome 86+、 Edge 86+ 或 Opera 72+.',
 
+                // Keyboard shortcuts (issue #24)
+                'shortcuts.title': '键盘快捷键',
+                'shortcuts.navigate': '在卡片和列之间移动焦点',
+                'shortcuts.firstLast': '聚焦本列的第一张 / 最后一张卡片',
+                'shortcuts.open': '打开聚焦的任务',
+                'shortcuts.edit': '编辑聚焦或已打开的任务',
+                'shortcuts.new': '新建任务(在聚焦的列中)',
+                'shortcuts.moveColumn': '将任务移到上一列 / 下一列',
+                'shortcuts.moveUpDown': '上移 / 下移任务',
+                'shortcuts.moveTopBottom': '将任务移到本列顶部 / 底部',
+                'shortcuts.search': '聚焦搜索框',
+                'shortcuts.close': '关闭最上层对话框 / 离开搜索框',
+                'shortcuts.save': '保存任务表单',
+                'shortcuts.help': '显示此帮助',
+
                 // Subtasks in detail modal
                 'subtask.newPlaceholder': '新的子任务...',
+
+                // About / update check (issue #22)
+                'header.about': '关于 / 检查更新',
+                'about.title': 'ℹ️ 关于',
+                'about.version': '版本:',
+                'about.checkNow': '🔄 检查更新',
+                'about.checking': '正在检查更新...',
+                'about.upToDate': '您使用的是最新版本。',
+                'about.updateAvailable': '新版本 {version} 可用',
+                'about.viewRelease': '查看发布',
+                'about.checkFailed': '无法检查更新(是否离线?)。',
+                'about.neverChecked': '尚未检查更新。',
+                'about.lastChecked': '上次检查:{date}',
+                'about.autoCheck': '自动检查更新(每天一次)',
+                'about.privacy': '检查只会向 api.github.com 发送一个请求,不会发送任何看板数据。',
+                'about.allReleases': 'GitHub 上的所有版本',
 
                 // Markdown generation
                 'markdown.archiveTitle': '# 任务归档',
